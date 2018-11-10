@@ -1,5 +1,12 @@
+<app-header></app-header>
 <div class="container">
     <ul>
-        <li *ngFor="let dog of dogList">{{ dog.name }}</li>
+        <li *ngFor="let dog of dogList">
+            <!-- fazer um ng if para verificar qual imagem receber -->
+            <a href="#" *ngIf="dog.id === 16" [ngStyle]="{'background-image': 'url(../../assets/images/16.jpg)'}" style="display:bock; width: 480px; height: 250px;">
+                <p> {{dog.name}} </p>
+                <p> {{dog.temperament}} </p>
+            </a>
+        </li>
     </ul>
 </div>

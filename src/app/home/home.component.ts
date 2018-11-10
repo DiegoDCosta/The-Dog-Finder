@@ -12,8 +12,8 @@ import { DogListService } from '../_services/dog-list.service'
 })
 export class HomeComponent implements OnInit {
 
+  //variavel que recebe os dogs
   public dogList: DogList[];
-
 
   constructor(
   private DogListService: DogListService
