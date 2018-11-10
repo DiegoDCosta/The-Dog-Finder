@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
+
+import {DogList} from '../_interfaces/dog-list';
+import { DogListService } from '../_services/dog-list.service'
+
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -7,9 +12,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  public dogList: DogList[];
+
+
+  constructor(
+  private DogListService: DogListService
+  ) { }
 
   ngOnInit() {
+    //DogList - consumindo o serviço
+    this.DogListService.getDogs().subscribe(
+      resposta =>{
+        this.dogList = resposta
+        console.log(resposta);
+      }
+    );
   }
 
 }
