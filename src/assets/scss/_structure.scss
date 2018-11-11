@@ -8,3 +8,11 @@ body {
     @include padding(0, 15px);
     margin: auto;
 }
+
+h1 {
+    @include font-size(1.7);
+}
+
+h2 {
+    @include font-size(1);
+}

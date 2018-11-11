@@ -1,0 +1,23 @@
+.caes {
+    @include padding(0, 0);
+    @include margin(0, 0);
+    .caes-card {
+        @include flexbox;
+        @include padding (10px, 10px);
+        @include justify-content(flex-end);
+        @include flex-direction(column);
+        text-decoration: none;
+        background-size: cover;
+        background-position: center center;
+        width: calc( 100% - 20px);
+        height: 250px;
+        &:visited {
+            color: inherit;
+        }
+        .caes-card-raca,
+        .caes-card-desc {
+            width: 100%;
+            @include margin(0, 0);
+        }
+    }
+}

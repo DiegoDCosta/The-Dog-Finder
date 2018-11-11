@@ -1,12 +1,27 @@
-<app-header></app-header>
 <div class="container">
-    <ul>
-        <li *ngFor="let dog of dogList">
+    <ul class="caes">
+        <li class="caes-card" *ngFor="let dog of dogList">
             <!-- fazer um ng if para verificar qual imagem receber -->
-            <a href="#" *ngIf="dog.id === 16" [ngStyle]="{'background-image': 'url(../../assets/images/16.jpg)'}" style="display:bock; width: 480px; height: 250px;">
-                <p> {{dog.name}} </p>
-                <p> {{dog.temperament}} </p>
+            <a class="caes-card" [routerLink]="['/dog-details']" routerLinkActive="router-link-active" *ngIf="dog.id == 6" style="background: url(../../assets/images/6.jpg); background-size: cover;">
+                <h1 class="caes-card-raca"> {{ dog.name }} </h1>
+                <h2 class="caes-card-desc"> {{ dog.temperament }} </h2>
+            </a>
+
+            <a class="caes-card" href="#" *ngIf="dog.id == 16" style="background: url(../../assets/images/16.jpg); background-size: cover;">
+                <h1 class="caes-card-raca"> {{ dog.name }} </h1>
+                <h2 class="caes-card-desc"> {{ dog.temperament }} </h2>
+            </a>
+
+            <a class="caes-card" href="#" *ngIf="dog.id == 81" style="background: url(../../assets/images/81.jpg); background-size: cover;">
+                <h1 class="caes-card-raca"> {{ dog.name }} </h1>
+                <h2 class="caes-card-desc"> {{ dog.temperament }} </h2>
+            </a>
+
+            <a class="caes-card" href="#" *ngIf="dog.id == 121" style="background: url(../../assets/images/121.jpg); background-size: cover;">
+                <h1 class="caes-card-raca"> {{ dog.name }} </h1>
+                <h2 class="caes-card-desc"> {{ dog.temperament }} </h2>
             </a>
         </li>
+
     </ul>
 </div>
