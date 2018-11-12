@@ -15,6 +15,9 @@ export class HomeComponent implements OnInit {
   //variavel que recebe os dogs
   public dogList: DogList[];
 
+  public title:string = "The Dog Finder";
+  public subTitle:string = "Everything about your pet";
+
   constructor(
   private DogListService: DogListService
   ) { }
