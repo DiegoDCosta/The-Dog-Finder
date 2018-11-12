@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+/*
+1 - paths
+2 - utilities
+3 - fonts
+4 - components
+5 - colors
+6 - queries css
+*/
+
+//paths
+@import "assets/scss/paths";
+//mixins - flexbox
+@import "assets/scss/mixins/flexbox";
+//mixins - project
+@import "assets/scss/mixins/project";
+// estructure
+@import "assets/scss/structure";
+//utilities
+@import "assets/scss/utilities";
+//fonts
+@import "assets/scss/fonts";
+//importa todos o css de todos os components
+@import "./assets/scss/components/components.scss";
+//queries css
+@import "assets/scss/queries";
