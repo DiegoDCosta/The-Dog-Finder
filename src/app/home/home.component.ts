@@ -29,4 +29,9 @@ export class HomeComponent implements OnInit {
     );
   }
 
+
+  getUrl(){
+    return "url('../../assets/images/dog-finder-banner.jpg')";
+  }
+
 }

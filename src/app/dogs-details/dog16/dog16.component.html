@@ -1,0 +1,24 @@
+<!-- recebe os dados do cão -->
+
+<section *ngFor="let dog of dog16">
+    <header>
+        <div class="header-geral" [ngStyle]="{'background-image': getUrl()}">
+            <div class="header-geral-titles">
+                <h1>{{ dog.name }}</h1>
+            </div>
+        </div>
+    </header>
+
+    <article class="container">
+        <div class="details-info">
+            <p>{{ dog.life_span }}</p>
+            <p>{{ dog.bred_for }}</p>
+            <p>{{ dog.breed_group }}</p>
+            <p>{{ dog.temperament }}</p>
+            <p>{{ dog.weight.imperial }}</p>
+            <p>{{ dog.weight.metric }}</p>
+            <p>{{ dog.height.imperial }}</p>
+            <p>{{ dog.height.metric }}</p>
+        </div>
+    </article>
+</section>
