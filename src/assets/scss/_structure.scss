@@ -9,10 +9,29 @@ body {
     margin: auto;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+body {
+    font-family: Heebo-Regular;
+    font-weight: 100;
+}
+
 h1 {
-    @include font-size(1.7);
+    @include font-size(1.5);
+    font-weight: 500;
 }
 
 h2 {
     @include font-size(1);
+}
+
+ul {
+    li {
+        list-style: none;
+    }
 }

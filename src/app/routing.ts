@@ -10,10 +10,10 @@ import { Dog121Component } from './dogs-details/dog121/dog121.component';
 
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
-  {path: 'dog6', component: Dog6Component},
-  {path: 'dog16', component: Dog16Component},
-  {path: 'dog81', component: Dog81Component},
-  {path: 'dog121', component: Dog121Component},
+  {path: '6', component: Dog6Component},
+  {path: '16', component: Dog16Component},
+  {path: '81', component: Dog81Component},
+  {path: '121', component: Dog121Component},
   {path: '**', component: Error404Component},
   //{ path: '**', redirectTo: '' },
 ];

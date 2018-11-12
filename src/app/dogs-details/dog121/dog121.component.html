@@ -2,22 +2,46 @@
 <section *ngFor="let dog of dog121">
     <header>
         <div class="header-geral" [ngStyle]="{'background-image': getUrl()}">
-            <div class="header-geral-titles">
+            <div class="header-geral-titles dog-name">
                 <h1>{{ dog.name }}</h1>
             </div>
         </div>
     </header>
 
     <article class="container">
-        <div class="details-info">
-            <p>{{ dog.life_span }}</p>
-            <p>{{ dog.bred_for }}</p>
-            <p>{{ dog.breed_group }}</p>
-            <p>{{ dog.temperament }}</p>
-            <p>{{ dog.weight.imperial }}</p>
-            <p>{{ dog.weight.metric }}</p>
-            <p>{{ dog.height.imperial }}</p>
-            <p>{{ dog.height.metric }}</p>
+        <div class="grid details-info">
+            <div class="grid-row">
+                <div class="grid-col details-desc">Life Span: </div>
+                <div class="grid-col">{{ dog.life_span }}</div>
+            </div>
+            <div class="grid-row">
+                <div class="grid-col details-desc">Bred For: </div>
+                <div class="grid-col">{{ dog.bred_for }}</div>
+            </div>
+            <div class="grid-row">
+                <div class="grid-col details-desc">Breed Group: </div>
+                <div class="grid-col">{{ dog.breed_group }}</div>
+            </div>
+            <div class="grid-row">
+                <div class="grid-col details-desc">Temperament: </div>
+                <div class="grid-col">{{ dog.temperament }}</div>
+            </div>
+            <div class="grid-row">
+                <div class="grid-col details-desc">Weight Imperial: </div>
+                <div class="grid-col">{{ dog.weight.imperial }}</div>
+            </div>
+            <div class="grid-row">
+                <div class="grid-col details-desc">Weight Metric: </div>
+                <div class="grid-col">{{ dog.weight.metric }}</div>
+            </div>
+            <div class="grid-row">
+                <div class="grid-col details-desc">Height Imperial: </div>
+                <div class="grid-col">{{ dog.height.imperial }}</div>
+            </div>
+            <div class="grid-row">
+                <div class="grid-col details-desc">Height Metric: </div>
+                <div class="grid-col">{{ dog.height.metric }}</div>
+            </div>
         </div>
     </article>
 </section>
