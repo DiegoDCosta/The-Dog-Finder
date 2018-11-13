@@ -21,7 +21,7 @@ export class Dog121Component implements OnInit {
   }
 
   getUrl(){
-    return "url('../../../assets/images/121.jpg')";
+    return "url('./assets/images/121.jpg')";
   }
 
 }
