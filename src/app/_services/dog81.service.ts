@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class Dog81Service {
 
-  private url_81 = './json/breed/81.json';
+  private url_81 = './assets/json/breed/81.json';
 
   constructor(
     private http: HttpClient

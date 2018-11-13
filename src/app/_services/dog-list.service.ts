@@ -7,7 +7,9 @@ import { Observable } from 'rxjs';
 })
 export class DogListService {
 
-  url:string = './json/breeds.json';
+  url:string = './assets/json/breeds.json';
+
+
 
   constructor( public http: HttpClient ) {}
 

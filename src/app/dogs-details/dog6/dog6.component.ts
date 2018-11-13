@@ -23,6 +23,6 @@ export class Dog6Component implements OnInit {
   }
 
   getUrl(){
-    return "url('../../../assets/images/6.jpg')";
+    return "url('./assets/images/6.jpg')";
   }
 }
