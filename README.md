@@ -26,8 +26,9 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-## Informações adicionais
+## Documentação do projeto
 Documentação do projeto feito com o [Compodoc](https://compodoc.app).
 Para rodar a documentação, entre no diretório raiz do projeto e execute `npm run compodoc` será criado um diretório na raiz do projeto com o nome ` documentation `
 
-
+## Build de produção.
+Depois que gerar o [Build de Produção](https://github.com/DiegoDCosta/the-dog-finder#build), navegue até `dist/the-dog-finder` e execute o comando `http-server`, caso não tenha esse pacote instaldo em sua máquina [HTTP-SERVER](https://www.npmjs.com/package/http-server).
